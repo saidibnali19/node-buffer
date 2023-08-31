@@ -12,11 +12,15 @@ const buffer3 = Buffer.alloc(5, 10);
 const buffer4 = Buffer.from([1, 2, 3, 4, 5, 5, 6]);
 // console.log(buffer4);
 
-const buffer5 = Buffer.allocUnsafe(10)
+const buffer5 = Buffer.allocUnsafe(10);
+// console.log(buffer5);
+buffer5.fill("a");
 // console.log(buffer5);
 
-const buffer6 = Buffer.from([257, 257.5, -255, "1"])
+const buffer6 = Buffer.from([257, 257.5, -255, "1"]);
 // console.log(buffer6);
 
-const buffer7 = Buffer.from("test")
-console.log(buffer7);
+const buffer7 = Buffer.from("test");
+// console.log(buffer7);
+
+// console.log(Buffer.allocUnsafe(-3));
